@@ -1,5 +1,5 @@
 name: Docker Publish
-jobs:
+
 on:
   push:
     branches:
@@ -9,8 +9,8 @@ permissions:
   contents: read
   packages: write
 
-
-  build-and-push:
+jobs:
+  A_build-and-push:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
